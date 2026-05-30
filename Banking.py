@@ -16,6 +16,7 @@ def banking():
             money = int(input("enter the amount to be withdrawn:"))
             if money > balance:
                 print("insuffienct money")
+                print(f"your current balance is: {balance}")
             else:
                 balance = balance - money
                 print(f"your current balance is: {balance}")
@@ -27,6 +28,7 @@ def banking():
 
         else:
             print("invalid choice")
+            print("thank you for banking with us")
             exit()
 
 banking()
